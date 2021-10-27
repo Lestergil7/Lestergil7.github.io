@@ -3,7 +3,7 @@
 
 /* header */
 
-.nav{
+.nave{
     text-decoration: none;
     margin-top: 1rem;
 }
@@ -345,7 +345,7 @@ span{
    
 }
 
-.nav3{
+.nave3{
     text-decoration: none;
     margin-top: 1rem;
 }
@@ -526,3 +526,4 @@ span{
     background-image: radial-gradient(circle at 120.71% 50%, #ffff67 0, #ffff57 16.67%, #ffff49 33.33%, #f2f23c 50%, #bccc31 66.67%, #8faa28 83.33%, #698c20 100%);
     border: black solid 2px;
 }
+
