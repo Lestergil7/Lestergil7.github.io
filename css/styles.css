@@ -29,7 +29,7 @@
 
 .fondo{
     background-color: #ecfb05;
-    padding: 0rem;
+    padding: 1rem;
     border: solid 1px black;
     
 }
@@ -102,7 +102,7 @@ h1{
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: darken;
     
-    height: 50rem;
+    height: 65rem;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,7 +111,7 @@ h1{
 }
 
 .bg__titulo{
-    margin-top: 10px;
+    margin-top: px;
 }
 
 /* .hero:before{
@@ -137,6 +137,8 @@ h2{
 
 .contenedor{
     margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
 .contenedor__presentacion{
     margin-top: 10rem;
@@ -224,10 +226,17 @@ span{
 
 .seccion__banda{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     padding: 1rem;
     margin-top: 2rem;
     align-items: center;
+}
+
+@media (min-width: 768px) {
+    .seccion__banda{
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
 }
 .banda__info{
     color: #ffffff;
@@ -266,16 +275,18 @@ span{
 
 .fondo2{
     background-color:#ffb4d2;
-    padding: 0rem;
+    padding: 1rem;
     border: solid 1px black;
 }
 
 .bg2{
-    background-image: url(../img/pantone.jpg);
+    /* background-image: url(../img/pantone.jpg);
     height: 83rem;
     
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+
+    background-color: #ffb4d2;
     
 
 }
@@ -292,7 +303,12 @@ span{
     font-weight: 570;
     font-size: 50px;
     text-align: center;
-    padding: 9px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.discografia__titulo{
+    padding-top: 40px;
 }
 
 .integrante__foto{
@@ -306,6 +322,16 @@ span{
 .img__tabla{
     height: 200px;
     width: 200px;
+}
+
+.tabla__texto{
+    font-family:'Cardo', serif;
+    color: #000;
+    font-size: 20px;
+}
+
+.banda__texto{
+    color: #000;
 }
 
 .resumen p{
@@ -322,7 +348,7 @@ span{
 
 .fondo3{
     background-color: #000;
-    padding: 0rem;
+    padding: 1rem;
     border: solid 1px wheat;
     
 }
@@ -360,6 +386,7 @@ span{
     background-blend-mode: darken;
     background-attachment: fixed;
     justify-items: center;
+    height: 400px;
 
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -426,6 +453,8 @@ span{
     align-items:center;
     gap: 2rem;
     margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
 }
 .boton__fecha{
@@ -508,7 +537,7 @@ span{
     
     background-image: radial-gradient(circle at 37.72% 119.64%, #ffff64 0, #ffff56 16.67%, #ffff48 33.33%, #f2f23c 50%, #bfce31 66.67%, #94ad28 83.33%, #6f9021 100%);
      padding: 1rem;
-     height: 280px;
+     height: 310px;
 
 }
 

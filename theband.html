@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&display=swap" rel="stylesheet">
     <title>THE 1975</title>
 </head>
@@ -64,35 +64,31 @@
     <section class="bg2">
 
         <div class="integrantes__titulo">
-            <h2 >INTEGRANTES</h2>
+            <h2 class="banda__texto">INTEGRANTES</h2>
         </div>
         
         <section class="integrantes">
             
                     <div>
                         <img class="integrante__foto" src="img/Matthew.png" alt="Matthew photo">
-                        <p>MATTHEW HEALY</p>
                     </div>
                 
 
                 
                     <div>
                         <img class="integrante__foto" src="img/Adam.png" alt="Adam photo">
-                        <p>ADAM HAMN</p>
                     </div>
                 
 
                 
                     <div>
                         <img class="integrante__foto" src="img/Ross.png" alt="Ross photo">
-                        <p>ROSS MACDONALD</p>
                     </div>
             
 
                 
                     <div>
                         <img class="integrante__foto" src="img/George.png" alt="George photo">
-                        <p>GEORGE DANIEL</p>
                     </div>
             
 
@@ -100,10 +96,12 @@
 
         <section>
 
-            <h2 class="discografia__titulo">DISCOGRAFIA</h2>
+            <div class="discografia__titulo">
+                <h2 class="banda__texto">DISCOGRAFIA</h2>
+            </div>
+   
 
-
-            <table class="tabla" border="1">
+            <!-- <table class="tabla table-dark table-borderless" border="1">
 
                 <tr>
                     <th><img class="img__tabla" src="img/1975.jpg" alt="primerAlbum"></th>
@@ -138,21 +136,40 @@
                         </ol>
                     </td>
                 </tr>
-            
-                <!-- <tr>
-                    <th><img class="img__tabla" src="img/notes.jpg" alt="cuartoAlbum"></th>
-                    
-                    <td>
-                        <ol>Notes On A Conditional Form
-                            <br>
-                            2020
-                        </ol>
-                    </td>
-                </tr>
-             -->
                 
             </table>
-            
+             -->
+
+             <table class="table caption-top table-striped">
+                <thead>
+                  <tr>
+                    <th  scope="col"></th>
+                    <th  scope="col"></th>
+                    <th  scope="col"></th>
+                    <th  scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"></th>
+                    <td><img class="img__tabla" src="img/1975.jpg" alt=""></td>
+                    <td class="tabla__texto">The 1975</td>
+                    <td class="tabla__texto">2013</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                    <td><img class="img__tabla" src="img/ilikeit.jpg" alt=""></td>
+                    <td class="tabla__texto">I Like It When You Sleep, for You Are So Beautiful yet So Unaware of It</td>
+                    <td class="tabla__texto">2016</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                    <td> <img class="img__tabla" src="img/brief.jpg" alt=""></td>
+                    <td class="tabla__texto">A Brief Inquiry Into Online Relationships</td>
+                    <td class="tabla__texto">2018</td>
+                  </tr>
+                </tbody>
+              </table>
                
         </section>
 
@@ -162,8 +179,44 @@
 
     <footer class="piso2">
 
+        <div class="redes">
+
+            <div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-spotify" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffb4d2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="12" r="9" />
+                <path d="M8 11.973c2.5 -1.473 5.5 -.973 7.5 .527" />
+                <path d="M9 15c1.5 -1 4 -1 5 .5" />
+                <path d="M7 9c2 -1 6 -2 10 .5" />
+              </svg>
+
+            </div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffb4d2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+              </svg>
+            </div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffb4d2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="3" y="5" width="18" height="14" rx="4" />
+                <path d="M10 9l5 3l-5 3z" />
+              </svg>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffb4d2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                </svg>
+            </div>
+
+        </div>
 
 
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
 </body>
 </html>
