@@ -447,15 +447,25 @@ span{
 
 .fechas{
     background-color: black;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    margin: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+@media (min-width: 768px) {
+    .fechas{
+     display: flex;
     flex-direction:row;
     justify-content: space-evenly;
     align-items:center;
     gap: 2rem;
-    margin: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    }
 
+ 
 }
 .boton__fecha{
     background-color: transparent;
@@ -478,15 +488,33 @@ span{
 .fechas__ciudad{
 
     font-family:'Cardo' , serif;
-    font-size: 80px;
+    font-size: 50px;
     color: white;
     
 }
+
+@media (min-width: 768px) {
+    .fechas__ciudad{
+        font-family:'Cardo' , serif;
+        font-size: 80px;
+        color: white; 
+    }
+ 
+}
 .span__fechas{
     font-family:'Cardo' , serif;
-    font-size: 80px;
+    font-size: 50px;
     color: wheat;
 
+}
+
+@media (min-width: 768px) {
+    .span__fechas{
+        font-family:'Cardo' , serif;
+        font-size: 80px;
+        color: wheat;
+    }
+ 
 }
 
 .redes__tour{
