@@ -393,13 +393,17 @@ span{
     
 }
 
+.banner1{
+    height: 10rem;
+}
+
 
 
 .titulo3{
     color: #fff;
     font-family: 'Cardo', serif;
-    font-weight: 800px;
-    font-size: 200px;
+    font-weight: 200px;
+    font-size: 40px;
     text-align: center;
     margin-top: 120px;
     
@@ -409,6 +413,21 @@ span{
 
 
 }
+
+@media (min-width: 380px) {
+    .titulo3{
+        font-size: 60px;
+    }
+ 
+}
+@media (min-width: 768px) {
+    .titulo3{
+        font-size: 80px;
+    }
+ 
+}
+
+
 
 .piso3{
     
@@ -456,6 +475,7 @@ span{
 
 }
 
+
 @media (min-width: 768px) {
     .fechas{
      display: flex;
@@ -488,8 +508,17 @@ span{
 .fechas__ciudad{
 
     font-family:'Cardo' , serif;
-    font-size: 50px;
+    font-size: 30px;
     color: white;
+    
+}
+
+@media (min-width: 380px) {
+    .fechas__ciudad{
+        font-family:'Cardo' , serif;
+        font-size: 60px;
+        color: white; 
+    }
     
 }
 
@@ -535,7 +564,7 @@ span{
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     justify-items: center;
     padding-top: 2rem;
@@ -543,6 +572,12 @@ span{
 
   }
 
+  @media (min-width: 380px) {
+      .grid{
+          grid-template-columns: repeat(2, 1fr);
+      }
+   
+  }
   @media (min-width: 768px) {
       .grid{
           grid-template-columns: repeat(3,1fr);
@@ -584,3 +619,55 @@ span{
     border: black solid 2px;
 }
 
+/* PHOTOS.HTML */
+
+.fondo4{
+    padding: 1rem;
+    
+}
+.photos{
+    width:min(90%, 120rem);
+    margin:0 auto;
+    background-color: grey;
+}
+
+.contacto-bg{
+    background-image: url(../img/banda2.jpg);
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.formulario{
+    background-color: #000;
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 3rem;
+    border: solid 1px grey;
+
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.campo__label{
+    flex: 0 0 9rem;
+    font-family:'Cardo', serif; 
+    color:white;
+}
+
+.campo__field{
+    flex: 1; 
+    border: 1px solid gray;
+    font-family: 'Cardo', serif;;
+    
+}
+
+.campo__field--textarea{
+    height: 10rem;
+
+}
