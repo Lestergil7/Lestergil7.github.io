@@ -1,0 +1,742 @@
+// globales
+
+
+
+/* index.html */
+
+/* header */
+
+.nave{
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.barra{
+    padding-top: 4rem;
+
+    margin : {
+        bottom: 0rem;
+        right: 3rem;
+        left: 3rem;
+
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+
+
+.fondo{
+    background-color: #ecfb05;
+    padding: 1rem;
+    border: solid 1px black;
+    
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+h1{
+    color: #000;
+    text-align: center;
+
+    font : {
+        family:'Cardo', serif;
+        weight: 570;
+        size: 50px;
+    }
+
+}
+
+
+
+.navegacion-principal{
+
+    a{
+        color: #000;
+        text-decoration: none;
+
+        font : {
+            size:20px ;
+            family:'Cardo', serif;
+            weight:400;
+        }
+
+} 
+    
+    /* filter: blur(0px); */
+
+
+
+
+
+/* .navegacion-principal a:hover{
+    background-color: #000;
+    color: #fff;
+    padding: 3px 10px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    width: 90%;
+
+  filter: blur(8px);
+  transition: all 2s;
+} */
+
+
+
+.navegacion-principal {
+
+    ul{
+        list-style: none;
+        margin-top: 4rem;
+        display: block;
+        text-align: center;
+} 
+
+}
+
+
+@media (min-width: 768px) {
+    .navegacion-principal ul{
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+
+/* MAIN */
+
+
+
+
+.bg{
+
+    background : {
+        image:  url(../img/background.jpg);
+        color:rgba(0, 0, 0, 0.7);
+        blend-mode: darken;
+        repeat: no-repeat;
+        size: cover;
+    }
+
+    height: 65rem;
+    position: relative;
+    padding: 200px 100px;
+    
+}
+
+.bg__titulo{
+    margin-top: 0px;
+}
+
+/* .hero:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .8);
+} */
+
+
+h2 {
+    color: #ffffff;
+
+    font : {
+        family:'Cardo', serif;
+        weight: 10;
+        size: 60px;
+    }
+    
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.contenedor{
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.contenedor__presentacion{
+    margin-top: 10rem;
+    width: 100%;
+}
+
+.contenedor__imagen{
+    max-width: 100%;
+    height: 30rem;
+}
+
+.contenedor__presentacion{
+    p {
+        color: #ffffff;
+        font: {
+            size: 20px;
+            decoration: none;
+            family:'Cardo', serif;
+            weight: 400px;
+        }
+        text-align: center;
+        word-spacing: 5px;
+    }
+
+}
+
+.album__canciones{
+
+    a {
+        color: #ffffff;
+        font: {
+            size:20px;
+            family:'Cardo', serif;
+            weight:400px;
+        }
+    
+        text-decoration: none;
+        /* word-spacing: 5px; */
+        filter: blur(0px);
+    } 
+
+}
+
+.album__canciones:hover{
+    filter: blur(8px);
+    transition: all 2s;
+    cursor: pointer;
+}
+
+
+span{
+    color: #ecfb05;
+    font-size: 15px;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+   
+}
+
+.album{
+    margin-top: 9rem; 
+    display: inline-block;
+    text-align: center;
+}
+
+/* footer */
+
+
+.redes{
+    display: flex;
+    justify-content: center;
+    /* margin-left: 400px; */
+   
+    gap: 2rem;
+}
+
+.piso{
+    background-color: #000;
+    padding: 3rem;
+
+}
+
+/* THEBAND.HTML */
+
+
+.main__banda{
+    background: {
+        image :url(../img/banda3.jpg);
+        size: cover;
+    }
+
+    height: 700px;
+    width: 100%;
+    background-attachment: fixed;
+   
+}
+
+.seccion__banda{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .seccion__banda{
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+}
+.banda__info{
+
+    font: {
+        family:'Cardo', serif;
+        weight:16px;
+        size:150;
+    }
+
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.banda__titulo{
+
+    font : {
+        family:'Cardo', serif;
+        weight:570;
+        size:50px;
+    }
+
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+.integrantes{
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+    column-gap: 1rem;
+    background-color: #000;
+    margin-top: 10px;
+    
+}
+
+@media (min-width: 768px) {
+    .integrantes{
+        grid-template-columns: repeat(4,1fr);
+    }
+    
+}
+
+.fondo2{
+    background-color:#ffb4d2;
+    padding: 1rem;
+    border: solid 1px black;
+}
+
+.bg2{
+    /* background-image: url(../img/pantone.jpg);
+    height: 83rem;
+    
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+    background-color: #ffb4d2;
+    
+
+}
+
+.piso2{
+    background-color: #000;
+    padding: 4rem;
+
+}
+
+.integrantes__titulo{
+    font: {
+        family:'Cardo', serif;
+        weight:570;
+        size:50px;
+    }
+
+    padding: {
+        top:40px;
+        bottom:20px;
+    }
+
+    color: #fff;
+    text-align: center;
+  
+}
+
+.discografia__titulo{
+    padding-top: 40px;
+}
+
+.integrante__foto{
+    margin-top: 40px;
+}
+
+ .tabla{
+    height: 1rem;
+    
+ }
+.img__tabla{
+    height: 200px;
+    width: 200px;
+}
+
+.tabla__texto{
+    font-family:'Cardo', serif;
+    color: #000;
+    font-size: 20px;
+}
+
+.banda__texto{
+    color: #000;
+}
+
+.resumen {
+    p{
+        color: #000;
+
+        font: {
+            size:20px;
+            direction:none;
+            family:'Cardo', serif;
+            weight:400;
+        }
+       
+    }
+} 
+
+
+/* tour.html */
+
+.fondo3{
+    background-color: #000;
+    padding: 1rem;
+    border: solid 1px wheat;
+    
+}
+
+.navegacion-principal3{
+    
+    a{
+        
+        font: {
+            size:20px;
+            family:'Cardo', serif;
+            weight:400;
+        }
+        
+        text-decoration: none;
+        color: wheat;
+    
+    }
+    
+} 
+.centrar-texto3{
+    text-align: center;
+    color: wheat;
+    font-family: 'Cardo', serif;
+    font-weight: 570;
+    font-size: 50px;
+   
+}
+
+.nave3{
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.parallax{
+   background-image: url(../img/background2.jpg) ;
+   /* background-size: cover; */
+    height: 520px;
+    /* width: 300px; */
+    background-repeat: repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    justify-items: center;
+    height: 400px;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+
+.banner1{
+    height: 10rem;
+}
+
+
+
+.titulo3{
+    color: #fff;
+    font-family: 'Cardo', serif;
+    font-weight: 200px;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 120px;
+    
+    /* margin-bottom: 50px; */
+
+    /* padding-top: 50px; */
+
+
+}
+
+@media (min-width: 380px) {
+    .titulo3{
+        font-size: 60px;
+    }
+ 
+}
+@media (min-width: 768px) {
+    .titulo3{
+        font-size: 80px;
+    }
+ 
+}
+
+
+
+.piso3{
+    
+        background-color:wheat;
+        padding: 4rem;
+        border: solid black;
+    
+    
+}
+
+.tour__foto{
+    height: 30rem;
+    
+}
+
+.tour__contenedor{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+   
+     /* margin-left: 200px; */
+}
+
+.boton__tour{
+    /* display: flex;
+  
+  justify-content: center; */
+  margin-left: 500px;
+}
+
+.contenedor__fechas{
+    background-color: wheat;
+    display: block;
+}
+
+.fechas{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    margin: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+
+@media (min-width: 768px) {
+    .fechas{
+     display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items:center;
+    gap: 2rem;
+    }
+
+ 
+}
+.boton__fecha{
+    background-color: transparent;
+    padding: 1rem 2rem;
+    border: solid white 1px;
+    text-transform: uppercase;
+    font-family: 'Cardo',serif;
+    font-size: 30px;
+    color: white;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.boton__fecha:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.fechas__ciudad{
+
+    font-family:'Cardo' , serif;
+    font-size: 30px;
+    color: white;
+    
+}
+
+@media (min-width: 380px) {
+    .fechas__ciudad{
+        font-family:'Cardo' , serif;
+        font-size: 60px;
+        color: white; 
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .fechas__ciudad{
+        font-family:'Cardo' , serif;
+        font-size: 80px;
+        color: white; 
+    }
+ 
+}
+.span__fechas{
+    font-family:'Cardo' , serif;
+    font-size: 50px;
+    color: wheat;
+
+}
+
+@media (min-width: 768px) {
+    .span__fechas{
+        font-family:'Cardo' , serif;
+        font-size: 80px;
+        color: wheat;
+    }
+ 
+}
+
+.redes__tour{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+/* merch.html */
+
+.contenedor__merch{
+      margin: 0  0;
+      background-color:black;
+      
+ 
+ }
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+  }
+
+  @media (min-width: 380px) {
+      .grid{
+          grid-template-columns: repeat(2, 1fr);
+      }
+   
+  }
+  @media (min-width: 768px) {
+      .grid{
+          grid-template-columns: repeat(3,1fr);
+      }
+  }
+
+
+
+.producto__precio{
+    font-size: 2rem;
+    font-family: 'Cardo', serif;
+    color: black;
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.5rem;
+     
+}
+
+.producto{
+    
+    background-image: radial-gradient(circle at 37.72% 119.64%, #ffff64 0, #ffff56 16.67%, #ffff48 33.33%, #f2f23c 50%, #bfce31 66.67%, #94ad28 83.33%, #6f9021 100%);
+     padding: 1rem;
+     height: 310px;
+
+}
+
+.producto__imagen{
+  width: 200px;
+  transition: width 1s;
+}
+
+.producto__imagen:hover{
+    width: 250px;
+}
+
+.piso4{
+    padding: 3rem;
+    background-image: radial-gradient(circle at 120.71% 50%, #ffff67 0, #ffff57 16.67%, #ffff49 33.33%, #f2f23c 50%, #bccc31 66.67%, #8faa28 83.33%, #698c20 100%);
+    border: black solid 2px;
+}
+
+/* PHOTOS.HTML */
+
+.fondo4{
+    padding: 1rem;
+    
+}
+.newsletter{
+    width:min(90%, 120rem);
+    margin:0 auto;
+    background-color: grey;
+}
+
+.contacto-bg{
+    background-image: url(../img/banda2.jpg);
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.formulario{
+    background-color: #000;
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 3rem;
+    border: solid 1px grey;
+
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.campo__label{
+    flex: 0 0 9rem;
+    font-family:'Cardo', serif; 
+    color:white;
+}
+
+.campo__field{
+    flex: 1; 
+    border: 1px solid gray;
+    font-family: 'Cardo', serif;;
+    
+}
+
+.campo__field--textarea{
+    height: 8rem;
+}
