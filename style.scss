@@ -7,23 +7,27 @@
 /* header */
 
 .nave{
+
     text-decoration: none;
-    margin-top: 1rem;
+    margin-top: 10px;
 }
 
 .barra{
-    padding-top: 4rem;
+
+    padding-top: 80px;
 
     margin : {
-        bottom: 0rem;
-        right: 3rem;
-        left: 3rem;
+
+        bottom: 0px;
+        right: 30px;
+        left: 30px;
 
     }
     
 }
 
 @media (min-width: 768px) {
+
     .barra{
         display: flex;
         justify-content: space-between;
@@ -35,48 +39,48 @@
 
 
 .fondo{
+
     background-color: #ecfb05;
-    padding: 1rem;
+    padding: 10px;
     border: solid 1px black;
     
 }
 
 .centrar-texto{
+
     text-align: center;
 }
 
 h1{
+
     color: #000;
     text-align: center;
 
     font : {
         family:'Cardo', serif;
-        weight: 570;
+        weight: 570px;
         size: 50px;
     }
-
+ 
 }
 
 
 
 .navegacion-principal{
-
-    a{
+    
+  a{
+      font : {
+          size:20px;
+          family:'Cardo', serif;
+          weight:400px;
+      }
         color: #000;
         text-decoration: none;
-
-        font : {
-            size:20px ;
-            family:'Cardo', serif;
-            weight:400;
-        }
-
-} 
-    
-    /* filter: blur(0px); */
-
-
-
+       
+        /* filter: blur(0px); */
+   
+    }
+}
 
 
 /* .navegacion-principal a:hover{
@@ -94,21 +98,24 @@ h1{
 
 
 .navegacion-principal {
-
-    ul{
+    
+ ul {
         list-style: none;
-        margin-top: 4rem;
+        margin-top: 40px;
         display: block;
         text-align: center;
+    }
 } 
+  
+ 
 
-}
 
 
 @media (min-width: 768px) {
+
     .navegacion-principal ul{
         display: flex;
-        gap: 1rem;
+        gap: 10px;
     }
 }
 
@@ -123,12 +130,12 @@ h1{
     background : {
         image:  url(../img/background.jpg);
         color:rgba(0, 0, 0, 0.7);
-        blend-mode: darken;
         repeat: no-repeat;
         size: cover;
     }
 
-    height: 65rem;
+    background-blend-mode: darken;
+    height: 1000px;
     position: relative;
     padding: 200px 100px;
     
@@ -149,36 +156,39 @@ h1{
 } */
 
 
-h2 {
-    color: #ffffff;
+h2{
 
     font : {
         family:'Cardo', serif;
-        weight: 10;
-        size: 60px;
+        size:60px;
+        weight:10px;
     }
-    
+
+    color: #ffffff;
     text-align: center;
     margin-bottom: 20px;
     
 }
 
 .contenedor{
+
     margin-bottom: 100px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 }
 .contenedor__presentacion{
-    margin-top: 10rem;
+
+    margin-top: 100px;
     width: 100%;
 }
 
 .contenedor__imagen{
     max-width: 100%;
-    height: 30rem;
+    height: 450px;
 }
 
-.contenedor__presentacion{
+.contenedor__presentacion {
+
     p {
         color: #ffffff;
         font: {
@@ -187,16 +197,20 @@ h2 {
             family:'Cardo', serif;
             weight: 400px;
         }
+
         text-align: center;
         word-spacing: 5px;
-    }
+    } 
 
 }
+
+
 
 .album__canciones{
 
     a {
         color: #ffffff;
+        
         font: {
             size:20px;
             family:'Cardo', serif;
@@ -206,6 +220,7 @@ h2 {
         text-decoration: none;
         /* word-spacing: 5px; */
         filter: blur(0px);
+
     } 
 
 }
@@ -223,14 +238,15 @@ span{
 }
 
 .contenedor{
+    margin-bottom: 100px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 30px;
    
 }
 
 .album{
-    margin-top: 9rem; 
+    margin-top: 100px; 
     display: inline-block;
     text-align: center;
 }
@@ -243,12 +259,12 @@ span{
     justify-content: center;
     /* margin-left: 400px; */
    
-    gap: 2rem;
+    gap: 20px;
 }
 
 .piso{
     background-color: #000;
-    padding: 3rem;
+    padding: 30px;
 
 }
 
@@ -256,26 +272,31 @@ span{
 
 
 .main__banda{
-    background: {
-        image :url(../img/banda3.jpg);
-        size: cover;
+
+    background : {
+
+        image: url(../img/banda3.jpg);
+        size:cover;
+        attachment:fixed;
     }
 
     height: 700px;
     width: 100%;
-    background-attachment: fixed;
+
    
 }
 
 .seccion__banda{
+
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    padding: 1rem;
-    margin-top: 2rem;
+    padding: 10px;
+    margin-top: 20px;
     align-items: center;
 }
 
 @media (min-width: 768px) {
+
     .seccion__banda{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -291,7 +312,7 @@ span{
 
     color: #ffffff;
     text-align: center;
-
+    
 }
 
 .banda__titulo{
@@ -304,14 +325,14 @@ span{
 
     color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 10px;
 }
 
 
 .integrantes{
     display: grid;
     grid-template-columns:repeat(1, 1fr);
-    column-gap: 1rem;
+    column-gap: 10px;
     background-color: #000;
     margin-top: 10px;
     
@@ -326,7 +347,7 @@ span{
 
 .fondo2{
     background-color:#ffb4d2;
-    padding: 1rem;
+    padding: 10px;
     border: solid 1px black;
 }
 
@@ -344,7 +365,7 @@ span{
 
 .piso2{
     background-color: #000;
-    padding: 4rem;
+    padding: 40px;
 
 }
 
@@ -362,7 +383,7 @@ span{
 
     color: #fff;
     text-align: center;
-  
+
 }
 
 .discografia__titulo{
@@ -374,7 +395,7 @@ span{
 }
 
  .tabla{
-    height: 1rem;
+    height: 10px;
     
  }
 .img__tabla{
@@ -394,15 +415,14 @@ span{
 
 .resumen {
     p{
-        color: #000;
-
         font: {
             size:20px;
-            direction:none;
             family:'Cardo', serif;
             weight:400;
         }
-       
+        color: #000;
+        text-decoration: none;
+        
     }
 } 
 
@@ -411,74 +431,100 @@ span{
 
 .fondo3{
     background-color: #000;
-    padding: 1rem;
+    padding: 10px;
     border: solid 1px wheat;
     
+} 
+
+.navegacion-principal3 {
+
+    ul{
+        list-style: none;
+        margin-top: 40px;
+        display: block;
+        text-align: center;
+    }
+} 
+
+
+@media (min-width: 768px) {
+    .navegacion-principal3 ul{
+        display: flex;
+        gap: 10px;
+    }
 }
 
-.navegacion-principal3{
-    
+
+
+.navegacion-principal3 {
+
     a{
-        
-        font: {
-            size:20px;
-            family:'Cardo', serif;
-            weight:400;
-        }
-        
+        color: wheat;
+        font-size: 20px;
         text-decoration: none;
         color: wheat;
     
-    }
-    
-} 
+    } 
+}
+
+ 
 .centrar-texto3{
+
+    font: {
+        family:'Cardo', serif;
+        weight:570;
+        size: 50px;;
+    }
     text-align: center;
     color: wheat;
-    font-family: 'Cardo', serif;
-    font-weight: 570;
-    font-size: 50px;
+   
    
 }
 
 .nave3{
     text-decoration: none;
-    margin-top: 1rem;
+    margin-top: 10px;
 }
 
 .parallax{
-   background-image: url(../img/background2.jpg) ;
-   /* background-size: cover; */
-    height: 520px;
+    background: {
+        image: url(../img/background2.jpg);
+        repeat:repeat;
+        color:rgba(0, 0, 0, 0.7);
+        attachment:fixed;
+
+    }
+   
+    /* background-size: cover; */
     /* width: 300px; */
-    background-repeat: repeat;
-    background-color: rgba(0, 0, 0, 0.7);
+    height: 520px;
     background-blend-mode: darken;
-    background-attachment: fixed;
     justify-items: center;
     height: 400px;
-
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     
 }
 
 .banner1{
-    height: 10rem;
+    height: 100px;
 }
 
 
 
 .titulo3{
+
+    font: {
+        family:'Cardo', serif;
+        weight:200px;
+        size:40px;
+    }
+
     color: #fff;
-    font-family: 'Cardo', serif;
-    font-weight: 200px;
-    font-size: 40px;
     text-align: center;
     margin-top: 120px;
     
     /* margin-bottom: 50px; */
-
     /* padding-top: 50px; */
 
 
@@ -502,14 +548,14 @@ span{
 .piso3{
     
         background-color:wheat;
-        padding: 4rem;
+        padding: 40px;
         border: solid black;
     
     
 }
 
 .tour__foto{
-    height: 30rem;
+    height: 300px;
     
 }
 
@@ -517,7 +563,7 @@ span{
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    width: 40%;
+    width: 40;
    
      /* margin-left: 200px; */
 }
@@ -538,10 +584,10 @@ span{
     background-color: black;
     display: grid;
     grid-template-columns: repeat(1 , 1fr);
-    margin: 1rem;
+    margin: 10px;
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
 }
 
@@ -552,20 +598,20 @@ span{
     flex-direction:row;
     justify-content: space-evenly;
     align-items:center;
-    gap: 2rem;
+    gap: 20px;
     }
 
  
 }
 .boton__fecha{
     background-color: transparent;
-    padding: 1rem 2rem;
+    padding: 10px 20px;
     border: solid white 1px;
     text-transform: uppercase;
     font-family: 'Cardo',serif;
     font-size: 30px;
     color: white;
-    border-radius: 5%;
+    border-radius: 5;
     text-align: center;
 }
 
@@ -619,26 +665,26 @@ span{
 .redes__tour{
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 20px;
 }
 
 
 /* merch.html */
 
 .contenedor__merch{
-      margin: 0  0;
-      background-color:black;
-      
+
+    margin: 0  0 ;
+    background-color:black;   
  
  }
 
 .grid{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
+    gap: 20px;
     justify-items: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
   }
 
@@ -657,20 +703,20 @@ span{
 
 
 .producto__precio{
-    font-size: 2rem;
+    font-size: 30px;
     font-family: 'Cardo', serif;
     color: black;
-    margin: 1rem 0;
+    margin: 20px ;
     text-align: center;
-    line-height: 1.5rem;
+    line-height: 10.5px;
      
 }
 
 .producto{
     
     background-image: radial-gradient(circle at 37.72% 119.64%, #ffff64 0, #ffff56 16.67%, #ffff48 33.33%, #f2f23c 50%, #bfce31 66.67%, #94ad28 83.33%, #6f9021 100%);
-     padding: 1rem;
-     height: 310px;
+     padding: 10px;
+     height: 305px;
 
 }
 
@@ -684,7 +730,7 @@ span{
 }
 
 .piso4{
-    padding: 3rem;
+    padding: 30px;
     background-image: radial-gradient(circle at 120.71% 50%, #ffff67 0, #ffff57 16.67%, #ffff49 33.33%, #f2f23c 50%, #bccc31 66.67%, #8faa28 83.33%, #698c20 100%);
     border: black solid 2px;
 }
@@ -692,18 +738,18 @@ span{
 /* PHOTOS.HTML */
 
 .fondo4{
-    padding: 1rem;
+    padding: 10px;
     
 }
 .newsletter{
-    width:min(90%, 120rem);
+    width:min(90, 1200px);
     margin:0 auto;
     background-color: grey;
 }
 
 .contacto-bg{
     background-image: url(../img/banda2.jpg);
-    height: 20rem;
+    height: 250px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -711,32 +757,42 @@ span{
 
 .formulario{
     background-color: #000;
-    margin: -5rem auto 0 auto;
+    margin: -50px auto 0 auto;
     width: 95%;
-    padding: 3rem;
+    padding: 50px;
     border: solid 1px grey;
 
 }
 
-.campo{
-    display: flex;
-    margin-bottom: 2rem;
-    gap: 2rem;
+.campo{ 
+    display: inline-grid;
+    margin-bottom: 20px;
+  
 }
 
+@media (min-width: 768px) {
+    .campo{
+        display: flex;
+    }
+ 
+}
+
+
 .campo__label{
-    flex: 0 0 9rem;
+    flex: 0 0 90px;
     font-family:'Cardo', serif; 
     color:white;
+   
 }
 
 .campo__field{
-    flex: 1; 
+    flex: 2; 
     border: 1px solid gray;
     font-family: 'Cardo', serif;;
     
 }
 
 .campo__field--textarea{
-    height: 8rem;
+    height: 80px;
+
 }

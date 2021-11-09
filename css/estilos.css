@@ -1,4 +1,10 @@
 
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
 /* index.html */
 
 /* header */
@@ -351,7 +357,24 @@ span{
     padding: 1rem;
     border: solid 1px wheat;
     
+} 
+
+.navegacion-principal3 ul{
+    list-style: none;
+    margin-top: 4rem;
+    display: block;
+    text-align: center;
 }
+
+
+@media (min-width: 768px) {
+    .navegacion-principal3 ul{
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+
 
 .navegacion-principal3 a{
     color: wheat;
@@ -643,25 +666,34 @@ span{
     background-color: #000;
     margin: -5rem auto 0 auto;
     width: 95%;
-    padding: 3rem;
+    padding: 5rem;
     border: solid 1px grey;
 
 }
 
-.campo{
-    display: flex;
+.campo{ 
+    display: inline-grid;
     margin-bottom: 2rem;
-    gap: 2rem;
+  
 }
+
+@media (min-width: 768px) {
+    .campo{
+        display: flex;
+    }
+ 
+}
+
 
 .campo__label{
     flex: 0 0 9rem;
     font-family:'Cardo', serif; 
     color:white;
+   
 }
 
 .campo__field{
-    flex: 1; 
+    flex: 2; 
     border: 1px solid gray;
     font-family: 'Cardo', serif;;
     
