@@ -108,7 +108,7 @@ h1{
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: darken;
     
-    height: 65rem;
+    height: 900px;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,9 +116,7 @@ h1{
     
 }
 
-.bg__titulo{
-    margin-top: px;
-}
+
 
 /* .hero:before{
     position: absolute;
@@ -141,10 +139,6 @@ h2{
     
 }
 
-.contenedor{
-    margin-bottom: 100px;
-    align-content: center;
-}
 
 .contenedor__presentacion{
     margin-top: 10rem;
@@ -153,7 +147,14 @@ h2{
 
 .contenedor__imagen{
     max-width: 100%;
-    height: 30rem;
+    height: 300px;
+}
+
+@media(min-width:540px){
+    .contenedor__imagen{
+        max-width: 100%;
+        height: 30rem;
+    }
 }
 
 .contenedor__presentacion p {
