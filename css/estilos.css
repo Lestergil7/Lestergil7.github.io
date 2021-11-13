@@ -1,10 +1,10 @@
 
-html{
+/* html{
     box-sizing: border-box;
 }
 *, *:before, *:after{
     box-sizing: inherit;
-}
+} */
 /* index.html */
 
 /* header */
@@ -146,6 +146,13 @@ h2{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 }
+
+@media (min-width: 768px) {
+    .contenedor{
+        grid-template-columns: repeat(2,1fr);
+    }
+ 
+}
 .contenedor__presentacion{
     margin-top: 10rem;
     width: 100%;
@@ -224,41 +231,52 @@ span{
 .main__banda{
     background-image: url(../img/banda3.jpg);
     background-size: cover;
-    height: 700px;
+    height: 600px;
     width: 100%;
     background-attachment: fixed;
    
 }
-
-.seccion__banda{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 1rem;
-    margin-top: 2rem;
-    align-items: center;
-}
-
-@media (min-width: 768px) {
-    .seccion__banda{
-        grid-template-columns: repeat(2, 1fr);
+@media (min-width:768px){
+    .main__banda{
+    
+        background-image: url(../img/banda3.jpg);
+        background-size:cover;
+        background-attachment:fixed;
+        height: 700px;
+        width: 100%;
+    
+       
     }
- 
 }
+
+
 .banda__info{
     color: #ffffff;
     text-align: center;
     font-family: 'Cardo', serif;
-    font-size: 16px;
-    font-weight: 150;
+    font-size: 15px;
+    font-weight: px;
 }
 
 .banda__titulo{
     color: #fff;
     font-family: 'Cardo', serif;
-    font-weight: 570;
-    font-size: 50px;
+    font-weight: 300px;
+    font-size: 20px;
     text-align: center;
-    padding: 1rem;
+    margin-bottom: 10px;
+}
+
+@media (min-width:768px){
+    .banda__titulo{
+        
+        font-family:'Cardo', serif;
+        font-weight:570;
+        font-size:50px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 80px;
+    }
 }
 
 
@@ -267,7 +285,7 @@ span{
     grid-template-columns:repeat(1, 1fr);
     column-gap: 1rem;
     background-color: #000;
-
+    justify-items: center;
     margin-top: 10px;
     
 }
@@ -303,15 +321,7 @@ span{
 
 }
 
-.integrantes__titulo{
-    color: #fff;
-    font-family: 'Cardo', serif;
-    font-weight: 570;
-    font-size: 50px;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
+
 
 .discografia__titulo{
     padding-top: 40px;
@@ -338,6 +348,18 @@ span{
 
 .banda__texto{
     color: #000;
+    font-family:'Cardo', serif ;
+    font-size: 45px;
+    padding: 20px;
+}
+
+@media (min-width:768px){
+    .banda__texto{
+        color: #000;
+        font-family:'Cardo', serif ;
+        font-size: 60px;
+        padding: 20px;
+    }
 }
 
 .resumen p{

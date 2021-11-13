@@ -174,8 +174,18 @@ h2{
 
     margin-bottom: 100px;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat (1, 1fr);
+    align-content: center;
 }
+@media(min-width:768px){
+    .contenedor{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+
+
 .contenedor__presentacion{
 
     margin-top: 100px;
@@ -280,52 +290,90 @@ span{
         attachment:fixed;
     }
 
-    height: 700px;
+    height: 800px;
     width: 100%;
 
    
 }
 
-.seccion__banda{
+@media (min-width:768px){
+    .main__banda{
 
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 10px;
-    margin-top: 20px;
-    align-items: center;
-}
-
-@media (min-width: 768px) {
-
-    .seccion__banda{
-        grid-template-columns: repeat(2, 1fr);
+        background : {
+    
+            image: url(../img/banda3.jpg);
+            size:cover;
+            attachment:fixed;
+        }
+    
+        height: 700px;
+        width: 100%;
+    
+       
     }
- 
 }
+
+
+
 .banda__info{
 
     font: {
         family:'Cardo', serif;
-        weight:16px;
-        size:150;
+        size:15px;
     }
 
+    font-weight:40px;
     color: #ffffff;
     text-align: center;
     
 }
 
+@media (min-width:768px){
+    .banda__info{
+
+        font: {
+            family:'Cardo', serif;
+            size:20px;
+        }
+    
+        font-weight:40px;
+        color: #ffffff;
+        text-align: center;
+        
+    }
+
+}
+
+
+
+
 .banda__titulo{
 
     font : {
         family:'Cardo', serif;
-        weight:570;
+        weight:300px;
         size:50px;
     }
 
     color: #fff;
     text-align: center;
-    padding: 10px;
+    margin-bottom: 60px;
+    padding: 15px;
+}
+
+@media (min-width:768px){
+    .banda__titulo{
+
+        font : {
+            family:'Cardo', serif;
+            weight:570;
+            size:80px;
+        }
+    
+        color: #fff;
+        text-align: center;
+        margin-bottom: 80px;
+    }
 }
 
 
@@ -334,6 +382,7 @@ span{
     grid-template-columns:repeat(1, 1fr);
     column-gap: 10px;
     background-color: #000;
+    justify-items: center;
     margin-top: 10px;
     
 }
@@ -369,22 +418,7 @@ span{
 
 }
 
-.integrantes__titulo{
-    font: {
-        family:'Cardo', serif;
-        weight:570;
-        size:50px;
-    }
 
-    padding: {
-        top:40px;
-        bottom:20px;
-    }
-
-    color: #fff;
-    text-align: center;
-
-}
 
 .discografia__titulo{
     padding-top: 40px;
@@ -411,7 +445,21 @@ span{
 
 .banda__texto{
     color: #000;
+    font-family:'Cardo', serif ;
+    font-size: 45px;
+    padding: 20px;
+
 }
+
+@media (min-width:768px){
+    .banda__texto{
+        color: #000;
+        font-family:'Cardo', serif ;
+        font-size: 60px;
+        padding: 20px;
+    }
+}
+
 
 .resumen {
     p{
@@ -716,18 +764,41 @@ span{
     
     background-image: radial-gradient(circle at 37.72% 119.64%, #ffff64 0, #ffff56 16.67%, #ffff48 33.33%, #f2f23c 50%, #bfce31 66.67%, #94ad28 83.33%, #6f9021 100%);
      padding: 10px;
-     height: 305px;
+     height: 240px;
+}
 
+@media (min-width:600px) {
+    .producto{
+        background-image: radial-gradient(circle at 37.72% 119.64%, #ffff64 0, #ffff56 16.67%, #ffff48 33.33%, #f2f23c 50%, #bfce31 66.67%, #94ad28 83.33%, #6f9021 100%);
+         padding: 10px;
+         height: 305px;
+    }
 }
 
 .producto__imagen{
-  width: 200px;
+  width: 150px;
   transition: width 1s;
+}
+@media (min-width:600px) {
+    .producto__imagen{
+        width: 200px;
+        transition: width 1s;
+        
+    }
 }
 
 .producto__imagen:hover{
-    width: 250px;
+    width: 180px;
 }
+
+@media (min-width:600px) {
+    .producto__imagen:hover{
+        width: 250px;
+      
+        
+    }
+}
+
 
 .piso4{
     padding: 30px;
